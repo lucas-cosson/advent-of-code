@@ -12,10 +12,3 @@ version = "0.1.0"
 dependencies = [
  "lib",
 ]
-
-[[package]]
-name = "year_2016"
-version = "0.1.0"
-dependencies = [
- "lib",
-]
