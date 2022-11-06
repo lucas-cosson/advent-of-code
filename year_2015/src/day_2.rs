@@ -1,9 +1,8 @@
 pub fn day2_part1() {
     let input = lib::handle_input_file("input/year_2015/day_2.txt");
-    let split_string: Vec<&str> = input.split('\n').collect();
     let mut total = 0;
 
-    for str in split_string {
+    for str in input.lines() {
         let dimensions: Vec<&str> = str.split('x').collect();
         let l = dimensions[0].parse::<i32>().unwrap();
         let w = dimensions[1].parse::<i32>().unwrap();
@@ -21,10 +20,9 @@ pub fn day2_part1() {
 
 pub fn day2_part2() {
     let input = lib::handle_input_file("input/year_2015/day_2.txt");
-    let split_string: Vec<&str> = input.split('\n').collect();
     let mut total = 0;
 
-    for str in split_string {
+    for str in input.lines() {
         let mut dimensions: Vec<i32> = str
             .split('x')
             .collect::<Vec<&str>>()

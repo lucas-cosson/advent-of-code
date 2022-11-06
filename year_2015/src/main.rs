@@ -24,10 +24,8 @@ fn main() {
     println!();
 
     // Day 4
-    /*
     day_4::day4_part1();
     day_4::day4_part2();
-    */
 
     println!();
 
